@@ -32,7 +32,16 @@ cars = [
 cars.sort(key=lambda x: x.speed)
 for racers in cars:
     print(racers.get_position())
+    print("====================================")
+    print(racers.initial_speed())
+    print("====================================")
+    print(racers.speed_up(100))
 
- 
+print("====================================")
+print("Cars sorted by speed in ascending order:")
+for racers in cars:
+    print(racers.get_position())
+    print(racers.initial_speed())
+    print("====================================")
 
 

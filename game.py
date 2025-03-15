@@ -1,12 +1,6 @@
 from race import Race
+from admin import create_cars
 
-def create_cars():
-    return [
-        Race('Mazda', 90, 2),
-        Race('Toyota', 100, 1),
-        Race('Honda', 80, 3),
-        Race('Ford', 70, 4)
-    ]
 
 def sort_cars_by_speed(cars):
     return sorted(cars, key=lambda x: x.speed)
